@@ -1,10 +1,11 @@
 import pytest
 
-from foo_bar_baz import foo_bar_baz
 
 #Add testcases Here
 
 def test_basic():
+    from foo_bar_baz import foo_bar_baz
+
     assert False != True
     assert foo_bar_baz(1) == "1"
     assert foo_bar_baz(2) == "1 2"
