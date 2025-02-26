@@ -20,3 +20,16 @@ def test_long():
 
 def test_length():    
     assert foo_bar_baz(6).count(" ") == 5
+
+def test_non_integer_input():
+    with pytest.raises(TypeError):
+        foo_bar_baz("10")
+    with pytest.raises(TypeError):
+        foo_bar_baz(10.5)
+    with pytest.raises(TypeError):
+        foo_bar_baz([10])
+    with pytest.raises(TypeError):
+        foo_bar_baz(None)
+    with pytest.raises(TypeError):
+        foo_bar_baz()
+    
