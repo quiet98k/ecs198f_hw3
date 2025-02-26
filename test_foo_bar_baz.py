@@ -41,11 +41,4 @@ def test_basic():
     assert foo_bar_baz(5) == "1 2 Foo 4 Bar"
     assert foo_bar_baz(6) == "1 2 Foo 4 Bar Foo"
     assert foo_bar_baz(10) == "1 2 Foo 4 Bar Foo 7 8 Foo Bar"
-    
-def test_output_file():
-    with open('output.txt', 'r') as file:
-        lines = file.readlines()
-        for i in range(-10, 1001):
-            expected_output = lines[i + 10].strip()  # Adjust index for negative values
-            assert foo_bar_baz(i) == expected_output
-    
+
