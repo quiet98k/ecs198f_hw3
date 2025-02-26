@@ -13,4 +13,5 @@ def foo_bar_baz(n: int) -> str:
             return_str += " "
     return return_str
 
-print(foo_bar_baz(1000))
+# for i in range(-10, 1001):
+#     print(foo_bar_baz(i))
