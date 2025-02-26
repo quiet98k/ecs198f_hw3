@@ -12,3 +12,5 @@ def foo_bar_baz(n: int) -> str:
         if i < n:
             return_str += " "
     return return_str
+
+print(foo_bar_baz(1000))
